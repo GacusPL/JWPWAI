@@ -67,15 +67,12 @@ server.listen(port, hostname, () => {
 
 // Zad 4 
 
-const S = require('string');          // łańcuchowe API
-// wczytanie opisu z package.json zainstalowanego modułu
+const S = require('string');
 const pkg = require('./node_modules/string/package.json');
 
 console.log('Opis modułu "string":', pkg.description);
 
-// przykłady użycia:
 console.log(S('---Foo---bAr---').camelize().s); 
-// -> 'fooBar' (przykład: zamienia na camelCase)
 
 console.log(S(' capitalize dash-CamelCase_underscore trim ').humanize().s);
-// -> 'Capitalize dash camel case underscore trim'
+
