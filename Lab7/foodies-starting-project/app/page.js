@@ -1,9 +1,24 @@
+import Link from 'next/link';
+import classes from '@/components/page.module.css';
+
 export default function Home() {
   return (
-    <main>
-      <h1 style={{ color: 'white', textAlign: 'center' }}>
-        Laboratorium nr 11 - projekt startowy
-      </h1>
-    </main>
+    <>
+      <header className={classes.header}>
+        <div className={classes.slideshow}>
+        </div>
+        <div className={classes.hero}>
+          <h1>NextLevel Food for Foodies</h1>
+          <p>Taste & share food from all over the world.</p>
+          <div className={classes.cta}>
+            <Link href="/community">Join the Community</Link>
+            <Link href="/meals">Explore Meals</Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        {/* Reszta treści */}
+      </main>
+    </>
   );
 }
