@@ -35,6 +35,7 @@ svg {
   background: linear-gradient(90deg, #f9572a, #ffc905);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   background-size: cover;
   background-position: center;
   font-family: 'Montserrat', sans-serif;
