@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './Hello';
+import HelloWithProps from './HelloWithProps';
+import Counter from './Counter';
+import InputTracker from './InputTracker';
+import LoginStatus from './LoginStatus';
+import ToDoList from './ToDoList';
+import LoginForm from './LoginForm';
 
 function App() {
+  const lista = ['Zrobić zakupy', ['Pójść na spacer'], ['Iść spać']];
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Labolatorium 4</h1>
+        <div>
+          <Hello />
+        </div>
+        <HelloWithProps name="Anna" />
+        <HelloWithProps name="Bartek" />
+        <HelloWithProps name="Celina" />
+        <Counter />
+        <InputTracker />
+        <LoginStatus isLoggedIn={true} />
+        <h3>Lista zadań:</h3>
+        <ToDoList todos={lista} />
+        <LoginForm />
       </header>
+
     </div>
   );
 }
+
 
 export default App;
